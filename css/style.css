@@ -1,0 +1,512 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+*, body {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {outline: none; }
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: inherit; }
+
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Semibold';
+    src: url('../fonts/MyriadPro-Semibold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.header {
+  padding-top: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__container h1 {
+  text-align: center;
+  font-family: 'MyriadPro-Semibold';
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  padding: 0 17px;
+}
+
+.header__container p {
+  text-align: center;
+  font-family: 'MyriadPro-Regular';
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.header__container p:before {
+  position: relative;
+  top: 6px;
+  right: 4px;
+  content: url("../img/sound.png");
+}
+
+.header__container p:after {
+  position: relative;
+  top: 6px;
+  left: 4px;  
+  content: url("../img/sound-2.png");
+}
+
+.screen-1 {
+  margin-bottom: 35px;
+  height: auto;
+}
+
+.screen-1__video {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 25.25%;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 862px;
+  height: 486px;
+}
+
+.video-placeholder {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 97%;
+}
+
+.screen__img {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.screen__img-2 {
+  display: none;
+}
+
+.screen__img.hidden {
+  z-index: 0;
+}
+
+.video-placeholder {
+  height: 97%;
+}
+
+.screen-2 {
+  margin: 15px 0;
+  width: 100%;
+  height: auto;  
+  background: linear-gradient(90deg, hsl(188deg 98% 33%) 0%, hsl(189deg 72% 71%) 100%);
+}
+
+.screen-2__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+}
+
+.screen-2__block-1 {
+  width: 274px;
+  height: 144px;
+}
+
+.screen-2__block-1 h2{
+  font-family: 'MyriadPro-SemiboldIt';
+  font-size: 34px;
+  color: #fff;
+}
+
+hr {
+  width: 186px;
+  height: 3px;
+  background-color: #fff;
+  margin: 14px 0;
+}
+
+.screen-2__block-1 h3{
+  font-family: 'MyriadPro-Regular';
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.screen-2__info-1 {
+  font-family: 'MyriadPro-Regular';
+  font-size: 12px;
+  color: #fff;
+  width: 95%;
+  line-height: 18px;
+}
+
+.screen-2__info-2 {
+  display: none;
+}
+
+.screen-2__block-2 {
+
+}
+
+.screen-2__img-1 {
+
+}
+
+.screen-2__block-3 {
+
+}
+
+.screen-2__img-2 {
+  width: 365px;
+  height: 89px;
+}
+
+.footer {
+  width: 75%;
+  margin: 39px auto 0 auto;
+  padding-bottom: 32px;
+}
+
+.footer p {
+  text-align: center;
+  font-family: 'MyriadPro-Regular';
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer__container {
+  text-align: center;
+  width: 100%;
+  line-height: 19px;
+}
+
+.footer__container a {
+  font-family: 'MyriadPro-Regular';
+  font-size: 13px;
+  color: #000;
+}
+
+.footer__link {
+  padding: 0 4px;
+}
+
+.footer__link:after {
+  content: "|";
+  margin-left: 11px;
+}
+
+.footer__link:nth-child(1):before {
+  content: "|";
+  margin-right: 11px;
+}
+
+.playbuttononyoutube {
+
+}
+
+.tap-image-size {
+
+}
+
+.page__tapImage {
+
+}
+
+.ls-is-cached {
+
+}
+
+.lazyloaded {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .screen-1__video {
+    width: 770px;
+    height: 434px;
+  }
+
+  .video-placeholder {
+    height: 97%;
+  }
+  .screen-2 {
+    margin: 15px 0;
+    width: 100%;
+    height: auto;  
+    background: linear-gradient(90deg, hsl(188deg 98% 33%) 0%, hsl(189deg 72% 71%) 100%);
+  }
+
+  .screen-2__info-2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .header__container h1 {
+    font-size: 28px;
+   }
+
+  .screen-1__video {
+    width: 570px;
+    height: 321px;
+  }
+
+  .video-placeholder {
+    height: 96%;
+  }
+
+  .screen-2 {
+    margin: 15px 0;
+    width: 100%;
+    height: auto;  
+    background: linear-gradient(90deg, hsl(188deg 98% 33%) 0%, hsl(189deg 72% 71%) 100%);
+  }
+
+  .screen-2__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+  }
+
+  .screen-2__block-1 { 
+    order: 1;
+    width: 176px;
+    height: 88px;
+  }
+
+  .screen-2__block-1 h2{
+    font-family: 'MyriadPro-SemiboldIt';
+    font-size: 26px;
+    color: #fff;
+  }
+
+  hr {
+    width: 101px;
+    height: 3px;
+    background-color: #fff;
+    margin: 14px 0;
+  }
+
+  .screen-2__block-1 h3{
+    font-family: 'MyriadPro-Regular';
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .screen-2__info-1 {
+    display: none;
+  }
+
+  .screen-2__info-2 {
+    position: relative;
+    top: 25px;
+    margin-bottom: 66px;
+    text-align: center;
+    display: block;
+    font-family: 'MyriadPro-Regular';
+    font-size: 12px;
+    color: #000;
+  }
+
+  .screen-2__block-2 {
+    order: 0;
+  }
+
+  .screen-2__img-1 {
+
+  }
+
+  .screen-2__block-3 {
+    order: 3;
+  }
+
+  .screen-2__img-2 {
+    width: 220px;
+    height: 53px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .screen-1__video {
+    width: 510px;
+    height: 287px;
+  }
+
+  .video-placeholder {
+    height: 95%;
+  }
+
+  .screen-2 {
+    height: auto;
+  }
+
+  .screen-2__container {
+    padding: 34px 0;
+    flex-wrap: wrap;
+  }
+
+  .screen-2__block-1 {
+    width: 227px;
+    height: 116px;
+    order: 0;
+  }
+
+  .screen-2__block-1 h2{
+    font-size: 30px;
+  }
+
+  hr {
+    width: 171px;
+  }
+
+  .screen-2__block-1 h3{
+    font-size: 15px;
+  }
+
+  .screen-2__block-2 {
+    order: 0;
+  }
+
+  .screen-2__block-3 {
+    order: 0;
+    width: 87%;
+  }
+
+  .screen-2__img-1 {
+    position: relative;
+    bottom: 25px;
+  }
+
+  .screen-2__img-2 {
+    width: 100%;
+    height: 124px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .screen-1 {
+    padding: 0 26px;
+  }  
+
+  .screen-1__video {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    max-width: 510px;
+    width: 100%;
+    height: 100%;
+  }  
+
+  .screen__img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    margin: 0 auto;
+    width: 1160px;
+    height: 715px;
+  }
+
+  .screen__img-2 {
+    width: 100%;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 44px;
+    transform: translate(-50%, -5%);
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .screen__img-2.hidden {
+    opacity: 0;
+  }
+
+  .video-placeholder {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1160px;
+    height: 99%;
+  }
+
+  .screen-2__block-1 {
+    width: 43%;
+  }
+
+  .screen-2__block-1 h2 {
+    font-size: 30px;
+  }
+
+  .screen-2__img-2 {
+    padding: 0 28px;
+    max-width: 510px;
+    width: 100%;
+    height: 124px;
+  }
+
+  hr {
+    width: 61%;
+  }
+
+  .screen-2__info-2 {
+    top: 37px;
+    padding: 0 25px;
+  }
+}
+
