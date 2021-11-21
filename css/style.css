@@ -366,7 +366,8 @@ hr {
   }
 
   .screen-2__img-1 {
-
+    position: relative; 
+    top: 13px;
   }
 
   .screen-2__block-3 {
