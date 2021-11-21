@@ -195,7 +195,7 @@ hr {
 }
 
 .screen-2__img-1 {
-
+  
 }
 
 .screen-2__block-3 {
@@ -429,7 +429,7 @@ hr {
 
   .screen-2__img-1 {
     position: relative;
-    bottom: 25px;
+    top: -25px;
   }
 
   .screen-2__img-2 {
